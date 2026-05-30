@@ -579,6 +579,7 @@ ul{
     background-color: var(--accent-color-5);
     color: var(--primary);
     padding: 40px 40px 40px 40px;
+    border-radius: 15px;
 }
 
 /* 10. Image Styles */
@@ -652,16 +653,16 @@ ul{
 
 
 .navbar-container {
-    padding: 20px 20px 0px 20px;
+    
     position: absolute;
-    top: 0;
+    /* top: 0; */
     left: 50%;
     width: 100%;
     transform: translateX(-50%);
     z-index: 10;
 }
 
-.navbar{
+/* .navbar{
     background-color: rgba(255,255,255,0.06);
     border: 1px solid rgba(255,255,255,0.14);
     border-radius: 24px;
@@ -669,7 +670,7 @@ ul{
     padding: 0px;
     z-index: 1;
     backdrop-filter: blur(22px);
-}
+} */
 
 .navbar .nav-link,
 .navbar .navbar-brand,
