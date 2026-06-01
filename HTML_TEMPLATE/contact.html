@@ -25,7 +25,7 @@
                         <div class="logo-container">
                             <a class="navbar-brand fw-bold" href="./index.html">
                                 <img src="./assets/images/logo-2-removebg-preview.png" alt="ACE-KHAN FILMS Logo"
-                                    style="max-width: 180px; height: auto;">
+                                    style="max-width: 150px; height: auto;">
                             </a>
                         </div>
 
@@ -194,7 +194,7 @@
                             <div class="d-flex flex-column gspace-5">
                                 <div class="d-flex flex-column gspace-2">
                                     <span class="contact-info-heading">Phone Number</span>
-                                    <h4>-7974723306</h4>
+                                    <h4>+91-7974723306</h4>
                                 </div>
                                 <div class="d-flex flex-column gspace-2">
                                     <span class="contact-info-heading">Email Address</span>
@@ -242,54 +242,54 @@
                                 <div class="card card-contact-form">
                                     <h3>Send us a Message</h3>
                                     <form id="contact-form" action="./assets/php/submit-contact.php" class="form">
-                                        <div class="row row-cols-lg-2 row-cols-1 grid-spacer-2">
-                                            <div class="col">
-                                                <input type="text" name="name" id="name" placeholder="Full Name">
-                                            </div>
-                                            <div class="col">
-                                                <input type="email" name="email" id="email" placeholder="Email Address">
-                                            </div>
-                                            <div class="col">
-                                                <input type="tel" name="phone" id="phone" placeholder="Phone Number">
-                                            </div>
-                                            <div class="col">
-                                                <input type="text" name="subject" id="subject" placeholder="Subject">
-                                            </div>
-                                            <div class="col col-lg-12">
-                                                <div class="dropdown-container">
-                                                    <div class="dropdown-select">
-                                                        <div class="d-flex flex-row align-items-center gap-3">
-                                                            <span class="selected-text">Project Type</span>
-                                                        </div>
-                                                        <i class="fa-solid fa-caret-down"></i>
-                                                    </div>
-                                                    <div class="dropdown-list">
-                                                        <div class="dropdown-option" data-value="commercial">Commercial
-                                                        </div>
-                                                        <div class="dropdown-option" data-value="short-film">Short Film
-                                                        </div>
-                                                        <div class="dropdown-option" data-value="music-video">Music
-                                                            Video</div>
-                                                        <div class="dropdown-option" data-value="event">Event</div>
-                                                        <div class="dropdown-option" data-value="other">Other</div>
-                                                    </div>
-                                                    <input type="hidden" id="project-type" name="project-type"
-                                                        class="dropdown-value">
-                                                </div>
-                                            </div>
-                                            <div class="col col-lg-12">
-                                                <textarea name="message" rows="6" id="Message"
-                                                    placeholder="Message"></textarea>
-                                            </div>
-                                        </div>
-                                        <div>
-                                            <button type="submit" class="btn btn-accent">
-                                                <span>Send Message</span>
-                                                <i class="fa-solid fa-chevron-circle-right"></i>
-                                            </button>
-                                        </div>
-
-                                    </form>
+    <div class="row row-cols-lg-2 row-cols-1 grid-spacer-2">
+        <div class="col">
+            <label for="name" class="form-label">Full Name</label>
+            <input type="text" name="name" id="name" placeholder="asheed khan">
+        </div>
+        <div class="col">
+            <label for="email" class="form-label">Email Address</label>
+            <input type="email" name="email" id="email" placeholder="hello@example.com">
+        </div>
+        <div class="col">
+            <label for="phone" class="form-label">Phone Number</label>
+            <input type="tel" name="phone" id="phone" placeholder="+91 7974723306">
+        </div>
+        <div class="col">
+            <label for="subject" class="form-label">Subject</label>
+            <input type="text" name="subject" id="subject" placeholder="Inquiry">
+        </div>
+        <div class="col col-lg-12">
+            <label for="project-type" class="form-label">Project Type</label>
+            <div class="dropdown-container">
+                <div class="dropdown-select">
+                    <div class="d-flex flex-row align-items-center gap-3">
+                        <span class="selected-text">Select a category</span>
+                    </div>
+                    <i class="fa-solid fa-caret-down"></i>
+                </div>
+                <div class="dropdown-list">
+                    <div class="dropdown-option" data-value="commercial">Commercial</div>
+                    <div class="dropdown-option" data-value="short-film">Short Film</div>
+                    <div class="dropdown-option" data-value="music-video">Music Video</div>
+                    <div class="dropdown-option" data-value="event">Event</div>
+                    <div class="dropdown-option" data-value="other">Other</div>
+                </div>
+                <input type="hidden" id="project-type" name="project-type" class="dropdown-value">
+            </div>
+        </div>
+        <div class="col col-lg-12">
+            <label for="Message" class="form-label">Message</label>
+            <textarea name="message" rows="3" id="Message" placeholder="Tell us about your project..."></textarea>
+        </div>
+    </div>
+    <div class="mt-4">
+        <button type="submit" class="btn btn-accent">
+            <span>Send Message</span>
+            <i class="fa-solid fa-chevron-circle-right"></i>
+        </button>
+    </div>
+</form>
                                 </div>
                             </div>
                         </div>
@@ -299,12 +299,14 @@
         </section>
 
         <!-- Maps Section -->
-        <section class="section p-0">
-            <iframe loading="lazy" class="maps"
-                src="https://maps.google.com/maps?q=London%20Eye%2C%20London%2C%20United%20Kingdom&amp;t=m&amp;z=14&amp;output=embed&amp;iwloc=near"
-                title="London Eye, London, United Kingdom" aria-label="London Eye, London, United Kingdom">
-            </iframe>
-        </section>
+       <section class="section p-0">
+    <iframe loading="lazy" class="maps"
+        src="https://maps.google.com/maps?q=Govindpura%20Industrial%20Area,%20Bhopal&t=&z=13&ie=UTF8&iwloc=&output=embed"
+        title="Govindpura Industrial Area, Bhopal, Madhya Pradesh" 
+        aria-label="Govindpura Industrial Area, Bhopal, Madhya Pradesh, "
+        width="100%" height="400" style="border:0;" allowfullscreen="">
+    </iframe>
+</section>
 
         <!-- Faq Section -->
         <!--
