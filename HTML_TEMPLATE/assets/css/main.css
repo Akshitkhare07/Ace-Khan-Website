@@ -2822,12 +2822,24 @@ ul{
     z-index: 3;
 }
 
-.contact-cta-image{
+.contact-cta-image {
     position: absolute;
-    left: -50px;
-    bottom: 0;
-    width: 58%;
-    z-index: 2;
+    left: 0;  
+    top: 0;      
+    bottom: 0;    
+    width: 50%;    
+    z-index: 2;     
+}
+/* Force the image to fill the space and fade out smoothly */
+.contact-cta-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center left;
+    
+    /* This creates the cinematic fade effect into the red background */
+    -webkit-mask-image: linear-gradient(to right, black 60%, transparent 100%);
+    mask-image: linear-gradient(to right, black 60%, transparent 100%);
 }
 
 /* 31. Team Style */
@@ -3466,4 +3478,71 @@ ul{
 }
 .grid-spacer-y-120 {
     --bs-gutter-y: 120px;
+}
+
+
+
+
+
+
+
+/* =========================================
+   TEAM SECTION PREMIUM HOVER EFFECTS
+   ========================================= */
+
+/* 1. Polish the image container */
+.team-container .team-image {
+    border-radius: 16px; /* Smooth rounded corners */
+    overflow: hidden;    /* Keeps the zooming image inside the box */
+    position: relative;
+    transition: box-shadow 0.4s ease, transform 0.4s ease, border-color 0.4s ease;
+    border: 2px solid transparent; 
+}
+
+/* 2. Add smooth transition to the image itself */
+.team-container .team-image img {
+    transition: transform 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94); /* Smooth, cinematic easing */
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* 3. The Hover Effect: Glow, Float, and Zoom */
+.team-container:hover .team-image {
+    /* Uses your theme's red accent color for the glow */
+    box-shadow: 0 15px 45px rgba(224, 28, 36, 0.4); 
+    transform: translateY(-8px); /* Lifts the image up slightly */
+    border-color: rgba(224, 28, 36, 0.3); /* Adds a very subtle red border */
+}
+
+.team-container:hover .team-image img {
+    transform: scale(1.08);
+}
+
+/* 4. Make the team member's name turn red on hover */
+.team-container h4 {
+    transition: color 0.3s ease;
+}
+
+.team-container:hover h4 {
+    color: var(--accent-color);
+}
+
+/* 5. Slight polish on the social icons */
+.team-container .social-icon {
+    opacity: 0.7; /* Make them slightly faded by default */
+    transform: scale(0.9);
+}
+
+.team-container:hover .social-icon {
+    opacity: 1; /* Bring them to full attention when the card is hovered */
+    transform: scale(1);
+}
+
+.team-container .team-image img {
+    width: 100% !important;
+    height: auto !important;  
+    aspect-ratio: 4 / 5 !important;
+    object-fit: cover !important; 
+    object-position: top center !important;
 }
